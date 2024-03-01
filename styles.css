@@ -1,0 +1,51 @@
+body, html{
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(212, 45%, 89%);
+    font-family: 'Outfit', sans-serif;
+    font-weight: 400; /* Regular weight for body text */
+}
+
+.card {
+    background-color: hsl(0, 0%, 100%);
+    width: calc(100% - 40px);
+    max-width: 300px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+    border-radius: 15px;
+    margin: 20px;
+}
+
+.qr-code {
+    width: calc(100% - 5px); /* 50% of the card's width minus 5px */
+    height: calc(100% - 5px); /* same as width to keep it square */
+    object-fit: contain; /* This ensures that the image is scaled correctly within the dimensions */
+    margin: auto; /* This will center the image in the card if the card is a flex container */
+    display: block; /* This ensures the image does not have extra space below it as an inline element would */
+    border-radius: 10px;
+  }
+
+h1 {
+    color: hsl(218, 44%, 22%);
+    font-weight: 700; /* Bold weight for headings */
+    font-size: 17px;
+    margin-bottom: 15px;
+}
+
+p {
+    color: hsl(220, 15%, 55%);
+    font-size: 15px;
+    margin-bottom: 20px;
+    text-align: center;
+
+}
+
+@media (min-width: 1440px) {
+    .card {
+        max-width: 275px;
+    }
+}
